@@ -24,15 +24,15 @@ Primero debemos introducir en la pestaña 'Auth' y con type ''Basic Auth' un usu
 
 Si enviamos sin rellenar la información o con el usuario o contraseña incorrectos y pulsemos en 'Send', nos devolverá 'HTTP Status 401 - Unauthorized'.
 
-![alt text](autentificacion-status.png)
+![alt text](capturas/autentificacion-status.png)
 
 Cuando pongamos el usuario y contraseña correctamente y enviemos a send, hará la función que toca según el endpoint en el que nos encontremos. Esto debe hacerse en cada uno de los endpoints, en este caso son 4:
 
-![alt text](capturas\endpoints.png){width=50%}
+![alt text](capturas/endpoints.png){width=50%}
 
 Además, se ha añadido un middleware que añade el header de Cache-control: no-cache para indicar a los navegadores y a otros intermediarios que no deben almacenar en caché la respuesta de una solicitud, aunque existe la posibilidad siempre y cuando se valide con el servidor antes de entregarla al cliente.
 
-![alt text](capturas\cache-control.png){width=75%}
+![alt text](capturas/cache-control.png){width=75%}
 
 ### Funcionalidades
 
@@ -40,27 +40,27 @@ Ahora vamos a comprobar las cuatro funcionalidades (GET, POST, PUT, DELETE) en p
 
 - GET: Nos devuelve la lista de tareas introducidas hasta el momento, si no hemos introducido ninguna, nos devolvera un array vacío.
 
-![alt text](capturas\get-vacio.png){width=75%}
+![alt text](capturas/get-vacio.png){width=75%}
 
 - POST: Crea una tarea, vamos a la pestaña body y escribimos el cuerpo de la solicitud en un formato JSON, indicando el id de la tarea, el título (title) y su estado (completed). Le damos a 'Send' y creará la tera y nos la mostrará.
 
-![alt text](capturas\post-tarea-creada.png){width=75%}
+![alt text](capturas/post-tarea-creada.png){width=75%}
 
 Ahora al solicitar GET, nos devolverá un array con todas las tareas que hayamos creado:
 
-![alt text](capturas\get-tareas-creadas.png)
+![alt text](capturas/get-tareas-creadas.png)
 
 - PUT: Actualizar una tarea. Para ello, debemos indicar el id en la URL y poner en el cuerpo de la solicitud (pestaña body) la tarea en formato JSON con la modificación que deseemos. Por ejemplo para marcar como completada la tarea con id 3 "Ir al gym".
 
-![alt text](capturas\put-completada.png)
+![alt text](capturas/put-completada.png)
 
 - DELETE: Elimina una tarea de la lista, hay que poner el id en la URL, darle a 'Send' y la tarea se eliminará de la lista.
 
-![alt text](capturas\delete.png)
+![alt text](capturas/delete.png)
 
 Ahora si ejecutamos GET, devolverá la lista actualizada:
 
-![alt text](capturas\get-actualizado.png)
+![alt text](capturas/get-actualizado.png)
 
 ---
 
