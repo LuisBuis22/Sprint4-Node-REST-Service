@@ -40,11 +40,11 @@ Ahora vamos a comprobar las cuatro funcionalidades (GET, POST, PUT, DELETE) en p
 
 - GET: Nos devuelve la lista de tareas introducidas hasta el momento, si no hemos introducido ninguna, nos devolvera un array vacío.
 
-![alt text](capturas/get-vacio.png){width=75%}
+![alt text](capturas/get-vacio.png)
 
 - POST: Crea una tarea, vamos a la pestaña body y escribimos el cuerpo de la solicitud en un formato JSON, indicando el id de la tarea, el título (title) y su estado (completed). Le damos a 'Send' y creará la tera y nos la mostrará.
 
-![alt text](capturas/post-tarea-creada.png){width=75%}
+![alt text](capturas/post-tarea-creada.png)
 
 Ahora al solicitar GET, nos devolverá un array con todas las tareas que hayamos creado:
 
