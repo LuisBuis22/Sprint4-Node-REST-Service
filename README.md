@@ -24,7 +24,7 @@ Primero debemos introducir en la pestaña 'Auth' y con type ''Basic Auth' un usu
 
 Si enviamos sin rellenar la información o con el usuario o contraseña incorrectos y pulsemos en 'Send', nos devolverá 'HTTP Status 401 - Unauthorized'.
 
-![alt text](capturas\autentificacion-status.png)
+![alt text](autentificacion-status.png)
 
 Cuando pongamos el usuario y contraseña correctamente y enviemos a send, hará la función que toca según el endpoint en el que nos encontremos. Esto debe hacerse en cada uno de los endpoints, en este caso son 4:
 
